@@ -19,7 +19,7 @@ import './samentics/OneCss.css';
 function App() {
 
   return (
-    <BrowserRouter /* basename="/thein-reactApp" */>
+    <BrowserRouter basename="/thein-reactApp" >
       <Header/>
       <Nav/>
       <Routes>
