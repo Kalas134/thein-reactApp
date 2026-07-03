@@ -3,7 +3,7 @@ import React from 'react';
 function CurriculumProj() {
     return (
         <div>
-            <h1>Curriculum Projects Page</h1>
+            <h1>Curriculum Projects Page</h1> 
         </div>
     );
 }
