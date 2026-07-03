@@ -1,0 +1,42 @@
+.header {
+    background-color: aqua;
+    width: 100%;
+}
+
+.footer {
+    background-color: #bababa;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav {
+    background-color: greenyellow;
+    display: flex;
+    width: 100%;
+}
+
+.nav > a,
+.nav > .dropdown {
+    flex: 1;
+    min-width: 140px;
+    text-align: center;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+}
