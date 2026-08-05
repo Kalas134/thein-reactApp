@@ -1,0 +1,134 @@
+.welcome-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-content {
+    text-align: center;
+}
+
+.welcome-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.welcome-subtitle {
+    margin-bottom: 10px;
+}
+
+.portfolio-select {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio-card {
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.portfolio-card.selected {
+    border: 3px solid red;
+}
+
+.portfolio-card.it {
+    background-color: #2563eb;
+    color: white;
+}
+
+.portfolio-card.it > h2 {
+    color: white;
+}
+
+.portfolio-card.game {
+    background-color: #111827;
+    color: white;
+}
+
+.portfolio-card.game > h2 {
+    color: rgb(22, 219, 15);
+}
+
+.portfolio-detail {
+    margin-top: 10px;
+    width: 420px;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+.portfolio-detail button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-color: black;
+    cursor: pointer;
+    background-color: #f1f5f9;
+}
+
+.portfolio-detail button:hover {
+    background-color: #cbd5e1;
+}
+
+/* ==========================================================
+   선택 정보 표시 영역
+========================================================== */
+.selected-info {
+    margin-top: 20px;
+    width: 420px;
+    min-height: 60px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 선택 정보 내부 */
+.selected-status {
+    width: 80%;
+}
+
+.selected-status p {
+    display: flex;
+    gap: 10px;
+    margin: 8px 0;
+}
+
+.selected-status span {
+    width: 100px;
+}
+
+.selected-status strong {
+    font-weight: bold;
+}
+
+/* ==========================================================
+   입장 버튼
+========================================================== */
+.enter-button {
+    margin-top: 10px;
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #2563eb;
+    color: white;
+}
+
+/* 비활성 상태 */
+.enter-button:disabled {
+    background-color: #cbd5e1;
+    cursor: not-allowed;
+}
