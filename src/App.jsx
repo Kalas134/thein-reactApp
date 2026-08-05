@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import Welcome from './Welcome';
+
 import Header from './samentics/Header';
 import Nav from './samentics/Nav';
 import Footer from './samentics/Footer';
@@ -20,7 +22,8 @@ function App() {
 
   return (
     <BrowserRouter basename="/thein-reactApp" >
-      <Header/>
+      <Welcome />
+      {/* <Header/>
       <Nav/>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -33,7 +36,7 @@ function App() {
         
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer/>
+      <Footer/> */}
     </BrowserRouter>
   )
 }

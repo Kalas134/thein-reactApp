@@ -1,0 +1,79 @@
+.welcome-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-content {
+    text-align: center;
+}
+
+.welcome-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.welcome-subtitle {
+    margin-bottom: 20px;
+}
+
+.portfolio-select {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.portfolio-card {
+    width: 230px;
+    height: 90px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-card.selected {
+    border: 3px solid red;
+}
+
+.portfolio-card.it {
+    background-color: #2563eb;
+    color: white;
+}
+
+.portfolio-card.game {
+    background-color: #111827;
+    color: white;
+}
+
+.portfolio-card.game > h2 {
+    color: rgb(22, 219, 15);
+}
+
+.portfolio-detail {
+    margin-top: 30px;
+    width: 480px;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+.portfolio-detail button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-color: black;
+    cursor: pointer;
+    background-color: #f1f5f9;
+}
+
+.portfolio-detail button:hover {
+    background-color: #cbd5e1;
+}
