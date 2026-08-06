@@ -38,12 +38,12 @@ function Welcome() {
     const portfolioList = [
         {
             id: "IT",
-            title: "General IT",
+            title: "일반 IT",
             className: "it"
         },
         {
             id: "GAME",
-            title: "Game Service",
+            title: "게임 서비스",
             className: "game"
         }
     ];
@@ -52,17 +52,27 @@ function Welcome() {
      * 포트폴리오별 세부 직무 데이터
      * ========================================================== */
     const portfolioMenu = {
-
         IT: [
-            "Backend",
-            "Frontend",
-            "Full Stack"
+            {
+                id: "Backend",
+                title: "백엔드"
+            },
+            {
+                id: "Frontend",
+                title: "프론트엔드"
+            },
+            {
+                id: "Full Stack",
+                title: "풀스텍"
+            }
         ],
 
         GAME: [
-            "Game Backend"
+            {
+                id: "Game Backend",
+                title: "게임 백엔드"
+            }
         ]
-
     };
 
     /* ==========================================================
@@ -109,18 +119,18 @@ const enterPortfolio = () => {
      * ========================================================== */
     const renderMenuButton = (menu) => (
         <button
-            key={menu}
+            key={menu.id}
             className={`
                 detail-button
                 ${
-                    selectedRole === menu
+                    selectedRole === menu.id
                     ? "selected"
                     : ""
                 }
             `}
-            onClick={() => selectRole(menu)}
+            onClick={() => selectRole(menu.id)}
         >
-            {menu}
+            {menu.title}
         </button>
     );
 
